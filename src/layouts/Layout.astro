@@ -1,36 +1,39 @@
 ---
-export interface Props {
-	title: string;
-}
+// Global Styles:
+import "@/styles/globals.css";
 
+// Layout:
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar.astro";
+
+// Page Props:
+export interface Props {
+  title: string;
+}
 const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main
+      class="flex min-h-screen w-full flex-col items-center gap-52 relative"
+    >
+      <div class="w-4/5 flex flex-col gap-32 pt-20">
+        <Navbar theme={false} toggleTheme={false} />
+        <Header />
+      </div>
+      <img class="absolute -bottom-[62vh] z-[-1]" src="/images/grid.png" />
+      <img class="z-[-1] -mt-20" src="/images/phone.png" />
+    </main>
+    <slot />
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
