@@ -8,7 +8,7 @@ function About() {
       <div className="flex items-center gap-16">
         <Decorator icon={<StarIcon />} />
         <h2 className="font-bold text-[64px] text-transparent bg-clip-text leading-[81.92px] bg-gradient-to-b from-[#DCFFDD] to-[#4AF65B] pb-4 w-max">
-          Sobre mi
+          Sobre mí
         </h2>
         <Decorator icon={<StarIcon />} />
       </div>
