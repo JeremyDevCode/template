@@ -4,7 +4,7 @@ import Paragraph from "@/common/Paragraph";
 
 function About() {
   return (
-    <main className="flex items-center w-full flex-col gap-16">
+    <main className="flex items-center w-full flex-col gap-16" id="about">
       <div className="flex items-center gap-16">
         <Decorator icon={<StarIcon />} />
         <h2 className="font-bold text-[64px] text-transparent bg-clip-text leading-[81.92px] bg-gradient-to-b from-[#DCFFDD] to-[#4AF65B] pb-4 w-max">
