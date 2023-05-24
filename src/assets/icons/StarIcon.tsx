@@ -21,8 +21,8 @@ const StarIcon: FC<ComponentProps<"svg">> = (props) => (
         y2="30.6176"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#DCFFDD" />
-        <stop offset="1" stop-color="#4AF75B" />
+        <stop stopColor="#DCFFDD" />
+        <stop offset="1" stopColor="#4AF75B" />
       </linearGradient>
     </defs>
   </svg>

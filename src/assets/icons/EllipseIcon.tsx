@@ -25,8 +25,8 @@ const EllipseIcon: FC<ComponentProps<"svg">> = (props) => (
         y2="30.6176"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#138EFF" />
-        <stop offset="0.990237" stop-color="#1DD7F0" />
+        <stop stopColor="#138EFF" />
+        <stop offset="0.990237" stopColor="#1DD7F0" />
       </linearGradient>
     </defs>
   </svg>
