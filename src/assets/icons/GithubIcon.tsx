@@ -1,6 +1,10 @@
 import type { ComponentProps, FC } from "react";
 
-const GithubIcon: FC<ComponentProps<"svg">> = (props) => (
+interface Props extends ComponentProps<"svg"> {
+  className: string;
+}
+
+const GithubIcon: FC<Props> = (props) => (
   <svg
     width="65"
     height="64"
