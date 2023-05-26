@@ -32,8 +32,13 @@ const { title } = Astro.props;
         <Navbar theme={false} toggleTheme={false} />
         <Header />
       </div>
-      <img class="absolute -bottom-[62vh] z-[-1]" src="/images/grid.png" />
-      <img class="z-[-1] -mt-20" src="/images/phone.png" />
+      <div class="relative flex items-center justify-center w-full">
+        <img
+          class="absolute left-0 -bottom-3/5 z-[-1]"
+          src="/images/grid.png"
+        />
+        <img class="z-[-1] -mt-20" src="/images/phone.png" />
+      </div>
     </main>
     <slot />
     <Footer />
