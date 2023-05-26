@@ -29,8 +29,11 @@ function Portfolio() {
       </div>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {repos.map((repo) => (
-          <div className="bg-[#0F1115] border border-[#2E3440] w-[440px] text-white rounded-md p-5 space-y-2">
+        {repos.map((repo, index) => (
+          <div
+            key={index}
+            className="bg-[#0F1115] border border-[#2E3440] w-[440px] text-white rounded-md p-5 space-y-2"
+          >
             <a
               href={repo.link}
               target="_blank"
