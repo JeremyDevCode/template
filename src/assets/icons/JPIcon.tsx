@@ -1,6 +1,10 @@
 import type { ComponentProps, FC } from "react";
 
-const JPIcon: FC<ComponentProps<"svg">> = (props) => (
+interface Props extends ComponentProps<"svg"> {
+  className: string;
+}
+
+const JPIcon: FC<Props> = (props) => (
   <svg
     viewBox="0 0 96 64"
     fill="none"
