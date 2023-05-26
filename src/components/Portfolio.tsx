@@ -12,6 +12,7 @@ function Portfolio() {
   const getRepos = async () => {
     const res = await getRepositories("juanpablo-is");
     setRepos(res);
+    console.log(res);
   };
 
   useEffect(() => {
@@ -28,36 +29,31 @@ function Portfolio() {
         <Decorator icon={<EllipseIcon />} />
       </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <section className="grid grid-cols-3 w-full place-items-center gap-16">
         {repos.map((repo, index) => (
-          <div
+          <article
             key={index}
-            className="bg-[#0F1115] border border-[#2E3440] w-[440px] text-white rounded-md p-5 space-y-2"
+            className={`flex flex-col gap-8 bg-[#0F1115] border border-[#2E3440] w-full p-8 text-3xl max-h-[360px] overflow-hidden ${
+              (index === 0 || index === 3 || index === 4) && "col-span-2"
+            }`}
           >
             <a
               href={repo.link}
               target="_blank"
               rel="noreferrer"
-              className="mb-3 hover:underline text-neutral-200 hover:text-neutral-100"
+              className="text-[#E3E6E8]"
             >
               <div className="flex items-center space-x-2">
-                <span className="text-xl">{repo.repo}</span>
+                <span className="text-4xl font-bold capitalize">
+                  {repo.repo}
+                </span>
                 <ExternalIcon width={18} className="mt-1 text-neutral-400" />
               </div>
             </a>
-            <p className="text-neutral-400 mb-3">{repo.description}</p>
-          </div>
+            <p className="text-[#9A9A9A] mb-3">{repo.description}</p>
+            <img className="h-auto w-4/5" src={repo.image} />
+          </article>
         ))}
-      </section>
-
-      <section className="flex gap-16">
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></div>
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></div>
-      </section>
-
-      <section className="flex gap-16">
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></div>
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></div>
       </section>
     </main>
   );
