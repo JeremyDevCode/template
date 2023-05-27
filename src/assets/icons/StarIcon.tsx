@@ -1,12 +1,12 @@
-import type { ComponentProps, FC } from "react";
+import type { FC } from "react";
+import type Props from "./props.types";
 
-const StarIcon: FC<ComponentProps<"svg">> = (props) => (
+const StarIcon: FC<Props> = ({ className }) => (
   <svg
-    width="32"
-    height="33"
     viewBox="0 0 32 33"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
   >
     <path
       d="M0 16.5C8.83656 16.5 16 9.33656 16 0.5C16 9.33656 23.1634 16.5 32 16.5C23.1634 16.5 16 23.6634 16 32.5C16 23.6634 8.83656 16.5 0 16.5Z"

@@ -19,7 +19,7 @@ const Header = () => {
         Soy un Ingeniero de Sistemas especializado en diseño de bases de datos y
         programación SQL
       </Paragraph>
-      <div className="flex justify-center gap-16">
+      <div className="flex justify-center gap-4 sm:gap-16">
         <Button
           content="Linkedin"
           icon={<LinkedInIcon className="w-6 h-6 sm:w-8 sm:h-8" />}

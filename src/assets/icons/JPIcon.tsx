@@ -1,8 +1,5 @@
-import type { ComponentProps, FC } from "react";
-
-interface Props extends ComponentProps<"svg"> {
-  className: string;
-}
+import type { FC } from "react";
+import type Props from "./props.types";
 
 const JPIcon: FC<Props> = (props) => (
   <svg

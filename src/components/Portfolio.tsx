@@ -1,5 +1,5 @@
 import EllipseIcon from "@/assets/icons/EllipseIcon";
-import Decorator from "@/common/Decorator";
+import TitleSeparator from "./TitleSeparator";
 import { useEffect, useState } from "react";
 
 import { getRepositories } from "@/services/getRepositories";
@@ -19,18 +19,19 @@ function Portfolio() {
   }, []);
 
   return (
-    <main className="flex items-center w-full flex-col gap-16" id="projects">
-      <div className="flex items-center gap-16">
-        <Decorator icon={<EllipseIcon />} />
-        <h2 className="font-bold text-[64px] text-transparent bg-clip-text leading-[81.92px] bg-gradient-to-b from-[#138EFF] to-[#1DD7F0] pb-4 w-max">
-          Proyectos
-        </h2>
-        <Decorator icon={<EllipseIcon />} />
-      </div>
-
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section
+      className="flex items-center w-full flex-col gap-16 mb-16"
+      id="projects"
+    >
+      <TitleSeparator
+        icon={<EllipseIcon className="w-6 h-6 md:w-8 md:h-8" />}
+        className="from-[#138EFF] to-[#1DD7F0]"
+      >
+        Proyectos
+      </TitleSeparator>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {repos.map((repo, index) => (
-          <div
+          <article
             key={index}
             className="bg-[#0F1115] border border-[#2E3440] w-[440px] text-white rounded-md p-5 space-y-2"
           >
@@ -46,20 +47,20 @@ function Portfolio() {
               </div>
             </a>
             <p className="text-neutral-400 mb-3">{repo.description}</p>
-          </div>
+          </article>
         ))}
-      </section>
+      </div>
 
-      <section className="flex gap-16">
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></div>
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></div>
-      </section>
+      <div className="flex gap-16">
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
+      </div>
 
-      <section className="flex gap-16">
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></div>
-        <div className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></div>
-      </section>
-    </main>
+      <div className="flex gap-16">
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
+      </div>
+    </section>
   );
 }
 
