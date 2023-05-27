@@ -9,6 +9,12 @@ import Menu from "./Menu.astro";
   <Logo />
   <Menu />
   <MobileMenu className="lg:hidden" client:load />
-  <GithubIcon fill="#E6E6E6" className="hidden lg:block w-10 h-10" />
+  <a
+    href="https://github.com/JeremyDevCode/template"
+    target="_blank"
+    rel="noreferrer noopener"
+  >
+    <GithubIcon fill="#E6E6E6" className="hidden lg:block w-10 h-10" />
+  </a>
   <!-- <ThemeToggle active={theme} handleClick={toggleTheme} disabled={false} /> -->
 </nav>
