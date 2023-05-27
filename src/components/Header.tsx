@@ -1,9 +1,9 @@
-import Button from "@/common/Button";
 import CurriculumIcon from "@/assets/icons/CurriculumIcon";
 import LinkedInIcon from "@/assets/icons/LinkedInIcon";
 import Paragraph from "@/common/Paragraph";
-import type { ReducerAction } from "react";
-import type React from "react";
+import LinkButton from '@/common/LinkButton';
+import curriculum from '@/assets/files/curriculum.pdf'
+
 
 const Header = () => {
   return (
@@ -21,14 +21,19 @@ const Header = () => {
         Soy un Ingeniero de Sistemas especializado en diseño de bases de datos y
         programación SQL
       </Paragraph>
-      <div className="flex justify-center gap-4 sm:gap-16" style={{ '--stagger': 3 } as React.CSSProperties} data-animate>
-        <Button
+      <div className="flex justify-center gap-4 sm:gap-16">
+        <LinkButton
           content="Linkedin"
           icon={<LinkedInIcon className="w-6 h-6 sm:w-8 sm:h-8" />}
+          href={import.meta.env.LINKEDIN_URL}
+          target="_blank"
+          rel="noopener noreferrer"
         />
-        <Button
+        <LinkButton
           content="Curriculum"
           icon={<CurriculumIcon className="w-6 h-6 sm:w-8 sm:h-8" />}
+          href={curriculum}
+          download
         />
       </div>
     </header>
