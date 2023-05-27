@@ -1,6 +1,7 @@
-import type { ComponentProps, FC } from "react";
+import type { FC } from "react";
+import type Props from "./props.types";
 
-const JPIcon: FC<ComponentProps<"svg">> = (props) => (
+const JPIcon: FC<Props> = (props) => (
   <svg
     viewBox="0 0 96 64"
     fill="none"

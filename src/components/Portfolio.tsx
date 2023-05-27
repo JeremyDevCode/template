@@ -1,5 +1,5 @@
 import EllipseIcon from "@/assets/icons/EllipseIcon";
-import Decorator from "@/common/Decorator";
+import TitleSeparator from "./TitleSeparator";
 import { useEffect, useState } from "react";
 
 import { getRepositories } from "@/services/getRepositories";
@@ -20,16 +20,17 @@ function Portfolio() {
   }, []);
 
   return (
-    <section className="flex items-center w-full flex-col gap-16" id="projects">
-      <div className="flex items-center gap-16">
-        <Decorator icon={<EllipseIcon />} />
-        <h2 className="font-bold text-[64px] text-transparent bg-clip-text leading-[81.92px] bg-gradient-to-b from-[#138EFF] to-[#1DD7F0] pb-4 w-max">
-          Proyectos
-        </h2>
-        <Decorator icon={<EllipseIcon />} />
-      </div>
-
-      <div className="grid lg:grid-cols-2 w-full gap-16">
+    <section
+      className="flex items-center w-full flex-col gap-16 mb-16"
+      id="projects"
+    >
+      <TitleSeparator
+        icon={<EllipseIcon className="w-6 h-6 md:w-8 md:h-8" />}
+        className="from-[#138EFF] to-[#1DD7F0]"
+      >
+        Proyectos
+      </TitleSeparator>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {repos.map((repo, index) => (
           <article
             key={index}
@@ -50,12 +51,21 @@ function Portfolio() {
                 <ExternalIcon width={24} className="mt-1 text-neutral-400" />
               </div>
             </a>
-            <p className="text-[#9A9A9A] mb-3">{repo.description}</p>
-            </div>
-            <img className="h-auto w-full group-hover:scale-[101.5%] transform duration-300 ease-in-out" src={repo.image} alt={`Description for ${repo.repo}`} />
+            <p className="text-neutral-400 mb-3">{repo.description}</p>
           </article>
         ))}
       </div>
+
+      <div className="flex gap-16">
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
+      </div>
+
+      <div className="flex gap-16">
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
+        <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
+      </div>
+
     </section>
   );
 }

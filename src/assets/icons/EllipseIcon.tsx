@@ -1,13 +1,14 @@
-import type { ComponentProps, FC } from "react";
+import type { FC } from "react";
+import type Props from "./props.types";
 
-const EllipseIcon: FC<ComponentProps<"svg">> = (props) => (
+const EllipseIcon: FC<Props> = ({ className }) => (
   <svg
     width="16"
     height="33"
     viewBox="0 0 16 33"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
+    className={className}
   >
     <rect
       y="0.5"

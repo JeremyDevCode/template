@@ -1,5 +1,9 @@
+---
+import MobileMenu from "@/components/MobileMenu";
+---
+
 <ul
-  class="flex items-center justify-center gap-14 text-2xl font-medium bg-[#0F1115A3] border-t-2 border-[#4E586C] rounded-full py-8 px-36"
+  class="hidden md:flex items-center justify-center gap-14 font-medium bg-[#0F1115A3] border-t-2 border-[#4E586C] rounded-full text-xl md:py-4 md:px-12 lg:text-2xl xl:text-3xl lg:py-6 lg:px-28 xl:py-8 xl:px-36"
 >
   <li>
     <a href="/">Inicio</a>
@@ -11,3 +15,4 @@
     <a href="#projects">Proyectos</a>
   </li>
 </ul>
+<MobileMenu className="md:hidden" client:load />

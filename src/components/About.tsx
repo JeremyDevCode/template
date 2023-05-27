@@ -1,23 +1,21 @@
 import StarIcon from "@/assets/icons/StarIcon";
-import Decorator from "@/common/Decorator";
-import Paragraph from "@/common/Paragraph";
+import TitleSeparator from "./TitleSeparator";
 
 function About() {
   return (
-    <main className="flex items-center w-full flex-col gap-16" id="about">
-      <div className="flex items-center gap-16">
-        <Decorator icon={<StarIcon />} />
-        <h2 className="font-bold text-[64px] text-transparent bg-clip-text leading-[81.92px] bg-gradient-to-b from-[#DCFFDD] to-[#4AF65B] pb-4 w-max">
-          Sobre mi
-        </h2>
-        <Decorator icon={<StarIcon />} />
-      </div>
-      <div className="flex flex-col items-center gap-12">
-        <p className="text-2xl text-[#C7CCD7] font-medium leading-[38.21px] w-[45%]">
+    <main className="flex items-center w-full flex-col gap-16 mb-16" id="about">
+      <TitleSeparator
+        icon={<StarIcon className="w-6 h-6 md:w-8 md:h-8" />}
+        className="from-[#DCFFDD] to-[#4AF65B]"
+      >
+        Sobre mi
+      </TitleSeparator>
+      <div className="flex flex-col w-3/4 lg:w-2/3 xl:w-1/2 items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+        <p className="text-xl sm:text-2xl text-[#C7CCD7] font-medium ">
           Nací en Colombia y tengo una titulación en Ingeniería de Sistemas,
           complementada con un postgrado en Power BI y Análisis de Información.
         </p>
-        <p className="text-2xl text-[#C7CCD7] font-medium leading-[38.21px] w-[45%]">
+        <p className="text-xl sm:text-2xl text-[#C7CCD7] font-medium ">
           Actualmente trabajo en Afordin, y en mi tiempo libre me dedico a
           responder las dudas de Comuafor y poner enlaces a recursos guapos
           (como yo ).
@@ -28,3 +26,5 @@ function About() {
 }
 
 export default About;
+
+// from-[#DCFFDD] to-[#4AF65B] <StarIcon className="w-6 h-6 md:w-8 md:h-8" />

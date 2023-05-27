@@ -1,17 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import MainContainer from "@/components/MainContainer.astro";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main
-    class="relative flex min-h-screen flex-col items-center justify-between px-[224px] py-[104px]"
-  >
-    <MainContainer>
-      <About />
-      <Portfolio client:load/>
-    </MainContainer>
-  </main>
+  <About />
+  <Portfolio client:load />
 </Layout>
