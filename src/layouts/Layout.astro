@@ -25,6 +25,13 @@ const { title } = Astro.props;
     />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={title} />
+    <meta property="og:image" content="/image.png" />
+    <meta property="og:url" content="https://tequeremosjp.vercel.app" />
+    <meta
+      property="og:description"
+      content="Soy un Ingeniero de Sistemas especializado en diseño de bases de datos y programación SQL"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
