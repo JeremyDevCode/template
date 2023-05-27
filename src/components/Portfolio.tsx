@@ -38,20 +38,21 @@ function Portfolio() {
           "
           >
             <div className="p-8 space-y-4">
-            <a
-              href={repo.link}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="text-[#E3E6E8]"
-            >
-              <div className="flex items-center space-x-2">
-                <span className="text-4xl font-bold capitalize">
-                  {repo.repo}
-                </span>
-                <ExternalIcon width={24} className="mt-1 text-neutral-400" />
-              </div>
-            </a>
-            <p className="text-neutral-400 mb-3">{repo.description}</p>
+              <a
+                href={repo.link}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-[#E3E6E8]"
+              >
+                <div className="flex items-center space-x-2">
+                  <span className="text-4xl font-bold capitalize">
+                    {repo.repo}
+                  </span>
+                  <ExternalIcon width={24} className="mt-1 text-neutral-400" />
+                </div>
+              </a>
+              <p className="text-neutral-400 mb-3">{repo.description}</p>
+            </div>
           </article>
         ))}
       </div>
@@ -65,7 +66,6 @@ function Portfolio() {
         <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
         <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
       </div>
-
     </section>
   );
 }
