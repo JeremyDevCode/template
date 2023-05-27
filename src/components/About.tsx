@@ -12,13 +12,15 @@ function About() {
       </TitleSeparator>
       <div className="flex flex-col w-3/4 lg:w-2/3 xl:w-1/2 items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
         <p className="text-lg lg:text-2xl text-[#C7CCD7] font-medium !leading-[158%] ">
-          Nací en Colombia y tengo una titulación en Ingeniería de Sistemas,
-          complementada con un postgrado en Power BI y Análisis de Información.
+          Después de obtener mi título en Ingeniería de Sistemas, comencé mi
+          carrera como desarrollador y posteriormente complementé mis estudios
+          con un posgrado en análisis. He colaborado en grandes comunidades de
+          programación.
         </p>
         <p className="text-lg lg:text-2xl text-[#C7CCD7] font-medium !leading-[158%]">
-          Actualmente trabajo en Afordin, y en mi tiempo libre me dedico a
-          responder las dudas de Comuafor y poner enlaces a recursos guapos
-          (como yo).
+          La pasión por ayudar a otros me ha llevado a familiarizarme con muchas
+          tecnologías, trabajar con muchos perfiles distintos, entender código
+          ajeno y desarrollar la capacidad de gestionar proyectos.
         </p>
       </div>
     </main>
