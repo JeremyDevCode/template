@@ -1,7 +1,8 @@
-import Button from "@/common/Button";
 import CurriculumIcon from "@/assets/icons/CurriculumIcon";
 import LinkedInIcon from "@/assets/icons/LinkedInIcon";
 import Paragraph from "@/common/Paragraph";
+import LinkButton from '@/common/LinkButton';
+import curriculum from '@/assets/files/curriculum.pdf'
 
 const Header = () => {
   return (
@@ -20,13 +21,18 @@ const Header = () => {
         programación SQL
       </Paragraph>
       <div className="flex justify-center gap-4 sm:gap-16">
-        <Button
+        <LinkButton
           content="Linkedin"
           icon={<LinkedInIcon className="w-6 h-6 sm:w-8 sm:h-8" />}
+          href={import.meta.env.LINKEDIN_URL}
+          target="_blank"
+          rel="noopener noreferrer"
         />
-        <Button
+        <LinkButton
           content="Curriculum"
           icon={<CurriculumIcon className="w-6 h-6 sm:w-8 sm:h-8" />}
+          href={curriculum}
+          download
         />
       </div>
     </header>
