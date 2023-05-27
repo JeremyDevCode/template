@@ -127,3 +127,7 @@ and open [http://localhost:3000](http://localhost:3000) with your browser to see
 </a>
 
 <p></p>
+
+## 📝 License
+
+- Distributed under the [MIT License](https://github.com/JeremyDevCode/template/blob/main/LICENSE). See `LICENSE` for more information.
