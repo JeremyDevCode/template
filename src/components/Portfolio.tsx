@@ -12,6 +12,7 @@ function Portfolio() {
   const getRepos = async () => {
     const res = await getRepositories("juanpablo-is");
     setRepos(res);
+    console.log(res);
   };
 
   useEffect(() => {
@@ -33,17 +34,21 @@ function Portfolio() {
         {repos.map((repo, index) => (
           <article
             key={index}
-            className="bg-[#0F1115] border border-[#2E3440] w-[440px] text-white rounded-md p-5 space-y-2"
+            className="group rounded-lg [background-image:radial-gradient(50.78%_50.78%_at_15.62%_24.61%,_rgba(255,_255,_255,_0.1)_0%,_transparent_100%)] bg-[#0F111599] border border-[#2E3440] hover:border-[#434b5c] transition-colors duration-200 ease-out w-full text-3xl max-w-3xl overflow-hidden
+          "
           >
+            <div className="p-8 space-y-4">
             <a
               href={repo.link}
               target="_blank"
-              rel="noreferrer"
-              className="mb-3 hover:underline text-neutral-200 hover:text-neutral-100"
+              rel="noreferrer noopener"
+              className="text-[#E3E6E8]"
             >
               <div className="flex items-center space-x-2">
-                <span className="text-xl">{repo.repo}</span>
-                <ExternalIcon width={18} className="mt-1 text-neutral-400" />
+                <span className="text-4xl font-bold capitalize">
+                  {repo.repo}
+                </span>
+                <ExternalIcon width={24} className="mt-1 text-neutral-400" />
               </div>
             </a>
             <p className="text-neutral-400 mb-3">{repo.description}</p>
@@ -60,6 +65,7 @@ function Portfolio() {
         <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
         <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
       </div>
+
     </section>
   );
 }
