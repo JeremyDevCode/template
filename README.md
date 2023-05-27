@@ -1,55 +1,129 @@
-# Astro Starter Kit: Basics
+<div align="center">
+<a href="#">
+<img src="public/images/gh_banner.jpg">
+</a>
+<p></p>
+</div>
 
+<div align="center">
+    <a href="#" target="_blank">
+        Portfolio
+    </a>
+    <span>&nbsp;❖&nbsp;</span>
+    <a href="#-getting-started">
+        Getting Started 
+    </a>
+    <span>&nbsp;❖&nbsp;</span>
+    <a href="#%EF%B8%8F-contributing">
+        Contributing
+    </a>
+    <span>&nbsp;❖&nbsp;</span>
+    <a href="https://www.linkedin.com/in/juanpablobarrerag/">
+        LinkedIn 
+    </a>
+</div>
+
+</p>
+
+<div align="center">
+
+![GitHub stars](https://img.shields.io/github/stars/jeremydevcode/template)
+![GitHub forks](https://img.shields.io/github/forks/jeremydevcode/template)
+![GitHub license](https://img.shields.io/github/license/jeremydevcode/template)
+![GitHub PRs](https://img.shields.io/github/issues-pr/jeremydevcode/template)
+
+</div>
+
+## 👋 Introduction
+
+I'm fullstack web developer interested in user experience, performance and creation of digital products.
+
+<div>
+<img src="public/svgs/javascript.svg" width="30px" alt="Javascript">
+<span>&nbsp;</span>
+<img src="public/svgs/react.svg" width="30px" alt="React">
+<span>&nbsp;</span>
+<img src="public/svgs/angular.svg" width="30px" alt="Angular">
+<span>&nbsp;</span>
+<img src="public/svgs/nextjs.svg" width="30px" alt="Next.js">
+<span>&nbsp;</span>
+<img src="public/svgs/mysql.svg" width="30px" alt="MySQL">
+<span>&nbsp;</span>
+<img src="public/svgs/mongodb.svg" width="30px" alt="MongoDB">
+<span>&nbsp;</span>
+<img src="public/svgs/php.svg" width="30px" alt="PHP">
+<span>&nbsp;</span>
+<img src="public/svgs/java.svg" width="30px" alt="Java">
+</div>
+</p>
+
+## 🚀 Getting Started
+
+To get a local copy up and running, please follow these simple steps:
+
+**Prerequisites**:
+
+- [Node.js +16](https://nodejs.org/en/).
+- [Visual Studio Code (recommended)](https://code.visualstudio.com/).
+
+**Recommended extensions** for Visual Studio Code:
+
+- [Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode).
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss).
+
+**Setup development server**:
+
+1. Clone or [fork](https://github.com/JeremyDevCode/template/fork) the repository:
+
+```sh
+git@github.com:JeremyDevCode/template.git
 ```
-npm create astro@latest -- --template basics
+
+2. Go to the project folder:
+
+```sh
+cd template
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+3. Install dependencies with your favorite package manager:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```sh
+# with npm:
+npm install
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+# with yarn:
+yarn
 
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+# with pnpm:
+pnpm install
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+4. Start the development server:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+# with npm:
+npm run dev
 
-Any static assets, like images, can be placed in the `public/` directory.
+# with yarn:
+yarn dev
 
-## 🧞 Commands
+# with pnpm:
+pnpm dev
+```
 
-All commands are run from the root of the project, from a terminal:
+and open [http://localhost:3000](http://localhost:3000) with your browser to see the result ✨.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## ⚙ Stack
 
-## 👀 Want to learn more?
+- [**Astro** + Typescript](https://astro.build/) - Build the web
+  you want.
+- [**React 18**](https://react.dev/) - The library for web and native user interfaces.
+- [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## ✌️ Contributing
+
+<a href="https://github.com/JeremyDevCode/template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=JeremyDevCode/template" />
+</a>
+
+<p></p>
