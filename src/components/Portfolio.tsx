@@ -21,7 +21,7 @@ function Portfolio() {
 
   return (
     <section
-      className="flex items-center w-full flex-col gap-16 mb-16"
+      className="flex items-center w-full flex-col gap-16 my-16 sm:my-32"
       id="projects"
     >
       <TitleSeparator
@@ -30,11 +30,11 @@ function Portfolio() {
       >
         Proyectos
       </TitleSeparator>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-6 sm:px-0">
         {repos.map((repo, index) => (
           <article
             key={index}
-            className="group rounded-lg [background-image:radial-gradient(50.78%_50.78%_at_15.62%_24.61%,_rgba(255,_255,_255,_0.1)_0%,_transparent_100%)] bg-[#0F111599] border border-[#2E3440] hover:border-[#434b5c] transition-colors duration-200 ease-out w-full text-3xl max-w-3xl overflow-hidden
+            className="group rounded-lg [background-image:radial-gradient(50.78%_50.78%_at_15.62%_24.61%,_rgba(255,_255,_255,_0.1)_0%,_transparent_100%)] bg-[#0F111599] border border-[#2E3440] hover:border-[#434b5c] transition-colors duration-200 ease-out w-full text-xl max-w-3xl overflow-hidden
           "
           >
             <div className="p-8 space-y-4">
@@ -45,7 +45,7 @@ function Portfolio() {
                 className="text-[#E3E6E8]"
               >
                 <div className="flex items-center space-x-2">
-                  <span className="text-4xl font-bold capitalize">
+                  <span className="text-3xl font-bold capitalize">
                     {repo.repo}
                   </span>
                   <ExternalIcon width={24} className="mt-1 text-neutral-400" />
@@ -55,16 +55,6 @@ function Portfolio() {
             </div>
           </article>
         ))}
-      </div>
-
-      <div className="flex gap-16">
-        <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
-        <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
-      </div>
-
-      <div className="flex gap-16">
-        <article className="bg-[#0F1115] border border-[#2E3440] w-[440px] h-[360px]"></article>
-        <article className="bg-[#0F1115] border border-[#2E3440] w-[692px] h-[360px]"></article>
       </div>
     </section>
   );
